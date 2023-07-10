@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Customers</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/dataTables.bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/dataTables.bootstrap.min.css">
+    
+    <style>
+        table.dataTable.display tbody tr:hover { background: #007bff13; }
+        table.dataTable.display tbody tr:hover > .sorting_1 { background: #1c69bb3f; }
+        table.dataTable.display tbody tr {cursor: pointer;}
+
+        body {
+            font-family: Roboto;
+            height: 100%;
+            overflow-x: auto;
+
+        } 
+
+        #managerBox {
+            display: none;
+            z-index: 99;
+            width: 220px;
+            height: fit-content;
+            background-color: #eee;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+        #managerBox p {
+            color: #00000089;
+        }
+        
+        .button_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .button_container u {
+            cursor: pointer;
+            color: #00000050;
+        }
+        .button_container button {
+            width: 120px;
+            height: 30px;
+            margin: auto;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div id="managerBox">
+        <h5 id="customer_id">ID: #5854</h5>
+        <p>The account cannot be restored</p>
+        <div class="button_container">
+            <button>Delete Account</button>
+            <br>
+            <u onclick="close_managerBox()">Close</u>
+        </div>
+    </div>
+    
+    <table id="example" class="display table table-striped table-bordered" width="100%"></table>
+
+    <script>
+
+        function open_managerBox(customerID) {
+            document.getElementById("customer_id").textContent = "ID: #"+customerID
+
+            document.getElementById("managerBox").style.display = "block";
+        }
+        
+        function close_managerBox() {
+            document.getElementById("managerBox").style.display = "none";
+        }
+
+        var dataSet = [];
+
+
+        function get_server_data() {
+            $.getJSON("/admin/customers_data",
+    
+                function(data) {
+                    dataSet = data.customers;
+
+                    $(document).ready(function () {
+                        var table = $('#example').DataTable({
+                            data: dataSet,
+                            columns: [
+                                { title: 'ID' },
+                                { title: 'Register Date' },
+                                { title: 'Balance' },
+                                { title: 'Email' },
+                                { title: 'Password Hash' },
+                            ],
+                        });
+
+                        $('#example').on('click', 'tbody tr', function () {
+                            var row = table.row($(this)).data();
+                            console.log("ID: ", row[0]);   //customerID
+                            open_managerBox(row[0]);
+                        });
+                    });
+                    
+                }       
+            )
+        }
+    
+        get_server_data()
+
+ 
+
+
+
+        
+
+    </script>
+</body>
+</html>

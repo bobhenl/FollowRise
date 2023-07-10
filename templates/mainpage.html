@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/static/content/favicon.ico" type="image/x-icon">
+    <title>FollowRise - Grow your social media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style/mainpage.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="/">
+            <img src="/static/content/logo_converted.svg" alt="">
+        </a>
+        <div class="link-container">
+            <a href="#pricing">
+                <p>PRICING</p>
+                <img src="/static/content/arrow.svg" alt="">
+            </a>
+            <a href="#how-it-works">
+                <p>HOW IT WORKS</p>
+                <img src="/static/content/arrow.svg" alt="">
+            </a>
+            <a href="#faq">
+                <p>FAQ</p>
+                <img src="/static/content/arrow.svg" alt="">
+            </a>
+            <a href="#contact-us">
+                <p>CONTACT US</p>
+                <img src="/static/content/arrow.svg" alt="">
+            </a>
+        </div>
+        <div class="buttons-container">
+            <button onclick="window.location.href = '/login'" class="loginBtn">LOGIN</button>
+            <button onclick="window.location.href = '/signup'" class="createAccountBtn">CREATE ACCOUNT</button>
+        </div>
+    </nav>
+    <div class="hamburger">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <div class="color-filter"></div>
+        <div class="icon-wrapper">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <div class="sidebar-subcontainer">
+                    <a href="#pricing" onclick="closeSideBar()">
+                        <p>PRICING</p>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </a>
+                    <a href="#how-it-works" onclick="closeSideBar()">
+                        <p>HOW IT WORKS</p>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </a>
+                    <a href="#faq" onclick="closeSideBar()">
+                        <p>FAQ</p>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </a>
+                    <a class="last-link" href="#contact-us" onclick="closeSideBar()">
+                        <p>CONTACT US</p>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </a>
+                </div>
+                <div class="sidebar-buttons-container">
+                    <button onclick="window.location.href = '/login'" class="loginBtn">LOGIN</button>
+                    <button onclick="window.location.href = '/signup'" class="createAccountBtn">CREATE ACCOUNT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <section class="hero-section">
+            <h1>Universe of <b>UI elements</b> to <br>help you stand out</h1>
+            <h2>Open-source and free to use, <br>just copy and paste!</h2>
+        </section>
+
+        <div id="pricing" class="card-container">
+            <div class="card">
+                <img class="popular_label" src="/static/content/popular_label2.png">
+                <img class="service_banner" src="/static/content/instagram_banner.png" style="width:100%">
+                <div class="card-subcontainer">
+                    <h1>Instagram</h1>
+                    <p>Price for 1000 pcs</p>
+                    <br>
+                    <div class="prices">
+                        <p><b>$5 </b> Followers</p>
+                        <p><b>$5 </b> Likes</p>
+                        <p><b>$5 </b> Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="service_banner" src="/static/content/tiktok_banner.png" style="width:100%">
+                <div class="card-subcontainer">
+                    <h1>TikTok</h1>
+                    <p class="price">Price for 1000 pcs</p>
+                    <br>
+                    <div class="prices">
+                        <p><b>$5 </b> Followers</p>
+                        <p><b>$5 </b> Likes</p>
+                        <p><b>$5 </b> Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="service_banner" src="/static/content/facebook_banner.png" style="width:100%">
+                <div class="card-subcontainer">
+                    <h1>Facebook</h1>
+                    <p class="price">Price for 1000 pcs</p>
+                    <br>
+                    <div class="prices">
+                        <p><b>$5 </b> Fanpage likes</p>
+                        <p><b>$5 </b> Likes on post</p>
+                        <p><b>$5 </b> Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="service_banner" src="/static/content/youtube_banner.png" alt="Denim Jeans" style="width:100%">
+                <div class="card-subcontainer">
+                    <h1>Youtube</h1>
+                    <p class="price">Price for 1000 pcs</p>
+                    <br>
+                    <div class="prices">
+                        <p><b>$5 </b> Likes</p>
+                        <p><b>$5 </b> Shorts</p>
+                        <p><b>$5 </b> Subscribers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-more-container">
+            <h3>Want to see the whole offer?</h3>
+            <button onclick="window.location.href = '/signup'" class="createAccountBtn2">CREATE AN ACCOUNT</button>
+        </div>
+        <div class="why-we-are-the-best-container">
+            <h1>🔥 WHY WE ARE THE BEST 🔥</h1>
+            <p>We are expanding all orders within 24 hours, but nually many early 🙂</p>
+            <div class="why-we-are-the-best-card-container">
+                <div class="why-we-are-the-best-card-subcontainer">
+                    <div class="card-wrapper">
+                        <div class="features-box">
+                            <div class="features-subbox">
+                                <div class="check-image-container">
+                                    <img src="/static/content/checkmark2.svg" alt="">
+                                </div>
+                                <p>Cheapest on the market</p>
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="features-subbox">
+                                <div class="check-image-container">
+                                    <img src="/static/content/checkmark2.svg" alt="">
+                                </div>
+                                <p>Fast delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="features-box">
+                            <div class="features-subbox">
+                                <div class="check-image-container">
+                                    <img src="/static/content/checkmark2.svg" alt="">
+                                </div>
+                                <p>No login details required</p>
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <div class="features-subbox">
+                                <div class="check-image-container">
+                                    <img src="/static/content/checkmark2.svg" alt="">
+                                </div>
+                                <p>Followers will never disappear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="how-it-works" class="how-it-works-container">
+            <h1>🚀 HOW IT WORKS 🚀</h1>
+            <div class="howitworks-container">
+                <div class="howitworks-subcontainer">
+                    <div class="circle">
+                        <img src="/static/content/user.svg" alt="">
+                    </div>
+                    <div class="title-desc-container">
+                        <h1>1. Create an account 😊</h1>
+                        <p>Make a simple registration first. You will have an overview of your orders and credits.</p>
+                    </div>
+                </div>
+                <div class="howitworks-subcontainer">
+                    <div class="circle">
+                        <img src="/static/content/coins.svg" alt="">
+                    </div>
+                    <div class="title-desc-container">
+                        <h1>2. Add a balance 💎</h1>
+                        <p>Click on the "My Account" button to open a menu where you enter the amount you want to deposit to your account.</p>
+                    </div>
+                </div>
+                <div class="howitworks-subcontainer">
+                    <div class="circle">
+                        <img src="/static/content/shopping-cart.svg" alt="">
+                    </div>
+                    <div class="title-desc-container">
+                        <h1>3. Select a service ❤️</h1>
+                        <p>Then just choose one of the many possible services, fill in the necessary information and send the order.</p>
+                    </div>
+                </div>
+                <div class="howitworks-subcontainer">
+                    <div class="circle">
+                        <img src="/static/content/checkmark.svg" alt="">
+                    </div>
+                    <div class="title-desc-container">
+                        <h1>4. Done! 🥳</h1>
+                        <p>And it is done! You can track the status of your order in the report on the "My Account" page. Or if you have any further questions, our support is here for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="statisctics-container">
+            <h1>STATISTICS</h1>
+            <div class="stats-subcontainer">
+                <div class="stats-subbox">
+                    <h1 class="years-of-experience-value">2</h1>
+                    <p>years of experience</p>
+                </div>
+                <div class="stats-subbox">
+                    <h1 class="satisfied-customers-value">3000+</h1>
+                    <p>satisfied customers</p>
+                </div>
+                <div class="stats-subbox">
+                    <h1 class="delivery-time-value">24h</h1>
+                    <p>delivery time</p>
+                </div>
+            </div>
+        </div>
+        <div id="faq" class="faq-container">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>  <!-- FAQ -->
+            <div class="faq-subcontainer">
+                <div class="faq-card">
+                    <div id="first-question" class="question-wrapper">
+                        <div class="question-subwrapper">
+                            <p class="question" title="">What's the point?</p>
+                        </div>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </div>
+                    <div id="first-answer" class="answer-wrapper">
+                        <p class="answer">There is a lot of use. 🔥 Whether you are starting a new company account and do not have any followers, or you are an influencer who wants to have bigger numbers on social networks. 🥰 Someone resells services, someone distributes followers to make people happy. The use is up to you. 😉</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="question-wrapper">
+                        <div class="question-subwrapper">
+                            <p class="question" title="">Is it illegal?</p>
+                        </div>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </div>
+                    <div class="answer-wrapper">
+                        <p class="answer">No, it is not. There is no law prohibiting the sale / use of this service. You asked us this question quite often, so we checked it out. 👍😌</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="question-wrapper">
+                        <div class="question-subwrapper">
+                            <p class="question" title="">What if the followers disappear?</p>
+                        </div>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </div>
+                    <div class="answer-wrapper">
+                        <p class="answer">This should not happen, however, if it does happen, write to us and we will add followers. 😇</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="question-wrapper">
+                        <div class="question-subwrapper">
+                            <p class="question" title="">Can't they delete my account for that?</p>
+                        </div>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </div>
+                    <div class="answer-wrapper">
+                        <p class="answer">🙅‍♂️ So far, any of the more than 10,000 target accounts have not been penalized for this, so we can refute this claim. ✅</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="question-wrapper">
+                        <div class="question-subwrapper">
+                            <p class="question" title="">What is the delivery time of followers?</p>
+                        </div>
+                        <img src="/static/content/arrow.svg" alt="">
+                    </div>
+                    <div class="answer-wrapper">
+                        <p class="answer">Orders are shipped immediately.<br> <br>As a rule, the service will start adding to the target profile within a few minutes. Perhaps all services are delivered the next day, except for special services such as YouTube followed hours. ⏱️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-us" class="contact-us-container">
+            <h1>😊 CONTACT US 😊</h1>
+            <p>Have any questions? Fill out the form and we will get back to you shortly ❤️</p>
+            <div class="contact-us-subcontainer">
+                <form action="" method="post">
+                    <div class="input-container">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" name="" id="" placeholder="Email" required>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                    <input type="submit" value="Submit" disabled>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links-and-payment-container">
+            <div class="subcontainer">
+                <h2>USEFUL LINKS</h2>
+                <a href="/login">Login</a>
+                <a href="/signup">Create account</a>
+                <a href="">Support</a>
+                <a href="">Work with us</a>
+            </div>
+            <div class="subcontainer">
+                <h2>GENERAL</h2>
+                <a href="">Privaci Policy</a>
+                <a href="">General Terms and Conditions</a>
+                <a href="">Cookie policy</a>
+                <a href="">Contact informations</a>
+            </div>
+            <div class="subcontainer">
+                <h2>FOLLOW US</h2>
+                <div class="social-container">
+                    <img src="/static/content/facebook-icon.svg" alt="">
+                    <img src="/static/content/instagram-icon.svg" alt="">
+                </div>
+                <!-- <div class="payment-icons">
+                    <img src="/static/content/gopay.png" alt="">
+                    <img src="/static/content/bitcoin.png" alt="">
+                    <img src="/static/content/visa.png" alt="">
+                    <img src="/static/content/mastercard.png" alt="">
+                </div> -->
+            </div>
+        </div>
+        <div class="tos-container">
+            <img class="footer_logo" src="/static/content/logo_converted.svg" alt="">
+            <p>2022 © - FollowRise.com | All rights reserved</p>
+            <div id="scrolltotop_ID" class="scrolltotop" onclick="ScrollToTop()">
+                <img src="/static/content/scroll-to-top-arrow.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="/static/script/mainpage.js"></script>
+    <script src="/static/script/smooth-scroll.js"></script>
+</body>
+</html>

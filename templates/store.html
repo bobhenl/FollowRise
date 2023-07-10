@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/static/content/favicon.ico" type="image/x-icon">
+    <title>FollowRise - Grow your social media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style/store.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="/">
+            <img src="/static/content/logo_converted_store.svg" alt="">
+        </a>
+        <div class="ballance-container">
+            <div class="credit-status">
+                <img src="/static/content/icon-awesome-wallet.svg" alt="">
+                <div class="value-container">
+                    <p>$</p><p>50.23</p>
+                </div>
+            </div>
+            <button>ADD BALANCE</button> <!-- Add Balance -->
+        </div>
+        <div class="dropdown-container">
+            <div class="myaccount" href=""><img src="/static/content/user_black.svg" alt=""><p>MY ACCOUNT</p><img src="/static/content/arrow_down_black.svg" alt=""></div>
+            <div class="dropdown-content">
+                <a href=""><img src="/static/content/icon-settings.svg" alt=""><p>ACCOUNT SETTINGS</p></a>
+                <a href=""><img src="/static/content/icon-wallet.svg" alt=""><p>DEPOSIT CREDIT</p></a>
+                <a href="/logout"><img src="/static/content/icon-logout.svg" alt=""><p>LOGOUT</p></a>
+            </div>
+        </div>
+    </nav>
+    <div class="hamburger">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <div class="color-filter"></div>
+        <div class="icon-wrapper">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <div class="sidebar-subcontainer">
+                    <a href=""><img src="/static/content/user-icon-gradient.svg" alt=""><p>ACCOUNT SETTINGS</p></a>
+                    <a href="" class="last-link"><img src="/static/content/icon-wallet-gradient.svg" alt=""><p>DEPOSIT CREDIT</p></a>
+                </div>
+                <div class="sidebar-buttons-container">
+                    <button onclick="window.location.href = '/logout'" class="loginBtn"><img src="/static/content/icon-logout.svg">LOGOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="service-container">
+            <div class="service-title">
+                <h2>All Services</h2>
+                <p>(Price for 100 pcs)</p>
+            </div>
+            <div class="service">
+                <p>Instagram</p>
+                <div class="service-subcontainer">
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - Followers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - Likes</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - Views</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - Comments</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - Story views</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="instagramServiceIcon-container">
+                            <img src="/static/content/flat-instagram.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Instagram - LIVE followers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <p>TikTok</p>
+                <div class="service-subcontainer">
+                    <div class="service-box">
+                        <div class="tiktokServiceIcon-container">
+                            <img src="/static/content/flat-tiktok.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>TikTok - Followers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="service-box">
+                        <div class="tiktokServiceIcon-container">
+                            <img src="/static/content/flat-tiktok.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>TikTok - Likes</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="tiktokServiceIcon-container">
+                            <img src="/static/content/flat-tiktok.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>TikTok - Views</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <p>YouTube</p>
+                <div class="service-subcontainer">
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-youtube.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>YoTube - Subscribers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-youtube.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>YouTube - Likes</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-youtube.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>YouTube - Views</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <p>Other services</p>
+                <div class="service-subcontainer">
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-facebook.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Facebook - Fanpage likes</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-facebook.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Facebook - Likes on post</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-twitch.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Twich - LIVESTREAM Viewers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-twitch.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Twich - Followers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-spotify.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Spotify - Mothly Listeners</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="youtubeServiceIcon-container">
+                            <img src="/static/content/flat-spotify.png" alt="">
+                        </div>
+                        <div class="others-container">
+                            <h4>Spotify - Followers</h4>
+                            <div class="price-and-button-contianer">
+                                <div class="price-container">
+                                    <p>12Kč / 100ks</p>
+                                </div>
+                                <button>SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links-and-payment-container">
+            <div class="subcontainer">
+                <h2>USEFUL LINKS</h2>
+                <a href="/login">Login</a>
+                <a href="/signup">Create account</a>
+                <a href="">Support</a>
+                <a href="">Work with us</a>
+            </div>
+            <div class="subcontainer">
+                <h2>GENERAL</h2>
+                <a href="">Privaci Policy</a>
+                <a href="">General Terms and Conditions</a>
+                <a href="">Cookie policy</a>
+                <a href="">Contact informations</a>
+            </div>
+            <div class="subcontainer">
+                <h2>FOLLOW US</h2>
+                <div class="social-container">
+                    <img src="/static/content/facebook-icon.svg" alt="">
+                    <img src="/static/content/instagram-icon.svg" alt="">
+                </div>
+                <!-- <div class="payment-icons">
+                    <img src="/static/content/gopay.png" alt="">
+                    <img src="/static/content/bitcoin.png" alt="">
+                    <img src="/static/content/visa.png" alt="">
+                    <img src="/static/content/mastercard.png" alt="">
+                </div> -->
+            </div>
+        </div>
+        <div class="tos-container">
+            <img src="/static/content/logo_converted.svg" alt="">
+            <p>2022 © - FollowRise.com | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="/static/script/smooth-scroll.js"></script>
+</body>
+</html>
